@@ -1,0 +1,20 @@
+{
+  "name": "quick-text-editor",
+  "version": "1.0.0",
+  "description": "Per edit save file editor",
+  "main": "main.js",
+  "productName": "quickTextele",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Michal Sarnecki",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^7.1.6",
+    "file-system": "^2.2.2"
+  },
+  "devDependencies": {
+    "electron-installer-windows": "^2.0.0",
+    "electron-packager": "^14.1.1"
+  }
+}

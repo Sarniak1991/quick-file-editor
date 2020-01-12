@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+node_modules
+dist
+quick-text-editor.iml
+quickTextele-darwin-x64
+

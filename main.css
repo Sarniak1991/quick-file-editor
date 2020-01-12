@@ -1,0 +1,115 @@
+body {
+    max-width: 36em;
+    margin: auto;
+    font-family: Roboto, serif;
+    line-height: 1.5;
+    background-color: #2B2B2B;
+    color: #A5C25C;
+}
+
+code {
+    font-family: Roboto Mono, monospace;
+    font-size: 90%;
+}
+
+.picker {
+    padding: 1em;
+    background-color: #111111;
+    color: #A5C25C;
+}
+
+.text-areas {
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #111111;
+    color: #A5C25C;
+}
+
+.published-text {
+    pointer-events: none;
+    float: left;
+    width: 42%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #111111;
+    color: #A5C25C;
+}
+
+.edit-text {
+    float: right;
+    width: 42%;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #111111;
+    color: #A5C25C;
+}
+
+.publish-button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+
+}
+
+.clear-published-button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+}
+
+.back-to-edit-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+}
+
+.back-to-edit-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+}
+
+.select-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+}
+
+.new-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 20px;
+}
+
+.main-button {
+    width: 70%;
+    height: 30px;
+    font-size: 80%;
+    min-height: 40px;
+    font-family: Arial;
+}
+
+.text-area {
+    width: 30%;
+    height: 80%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <label>Create new file</label>
+    <input id="btncreatefile" type="button" value="Create new file"/>
+
+    <script>
+        const fs = require('fs');
+
+        const {dialog, app} = require("electron").remote;
+
+        document.getElementById("btncreatefile").addEventListener("click", () => {
+            let content = "first try";
+            console.log('test3');
+            const options = {
+                defaultPath: app.getPath('documents') + '/electron-tutorial-app.pdf',
+            };
+            let filePath = dialog.showSaveDialog(options) .then(
+                result => {
+                    console.log('test');
+                    console.log(result.filePath);
+                    if (undefined == result.filePath) {
+                        console.log('Button clicked, but no file created');
+                        return;
+                    }
+
+                    fs.writeFile(result.filePath, content, (err) => {
+                        if (err) {
+                            console.log("Error occured: " + err.message);
+                            return;
+                        }
+
+                        alert("File created successfuly: " + result.filePath);
+                    })
+                }
+            );
+        });
+    </script>
+</body>
+</html>
+
