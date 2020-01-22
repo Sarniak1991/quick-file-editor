@@ -11,27 +11,36 @@
     <div class="text-areas">
         <div class="published-text">
                 <div><label>Published text</label></div>
-                <div class="text-area"><textarea id="published" placeholder="Published text, you can not edit it" cols="30" rows="10" aria-label="sad"></textarea></div>
+                <textarea class="text-area" id="published" placeholder="Published text, you can not edit it" cols="30" rows="10" aria-label="sad"></textarea>
         </div>
         <div class="edit-text">
                 <div><label>Edit area</label></div>
-                <div class="text-area"><textarea accesskey="a" placeholder="Edit text area. Move to published when ready" cols="30" rows="10" aria-label="sad" id="edit" autofocus onfocusin="true"></textarea></div>
+                <textarea class="text-area" accesskey="a" placeholder="Edit text area. Move to published when ready" cols="30" rows="10" aria-label="sad" id="edit" autofocus onfocusin="true"></textarea>
         </div>
     </div>
-    <div class="publish-button-div">
-        <button class="main-button" id="publish-text-button" onclick="">Publish Text</button>
-    </div>
-    <div class="clear-published-button-div">
-        <button class="main-button" id="clear-published-text-button" onclick="">Clear published Text</button>
-    </div>
-    <div class="back-to-edit-div">
-        <button class="main-button" id="back-to-edit-button" onclick="">Back to Edit</button>
-    </div>
-    <div class="select-file">
-        <button class="main-button" id="select-file-button" onclick="">Select File</button>
-    </div>
-    <div class="new-file">
-        <button class="main-button" id="new-file-button" onclick="">New File</button>
+    <div id="user-input-div">
+        <div id="buttons-div">
+            <div class="publish-button-div">
+                <button class="main-button" id="publish-text-button" onclick="">Publish Text</button>
+            </div>
+            <div class="clear-published-button-div">
+                <button class="main-button" id="clear-published-text-button" onclick="">Clear published Text</button>
+            </div>
+            <div class="back-to-edit-div">
+                <button class="main-button" id="back-to-edit-button" onclick="">Back to Edit</button>
+            </div>
+            <div class="select-file">
+                <button class="main-button" id="select-file-button" onclick="">Select File</button>
+            </div>
+            <div class="new-file">
+                <button class="main-button" id="new-file-button" onclick="">New File</button>
+            </div>
+        </div>
+        <div id="toolbox-div">
+            <form class="checkboxes-form">
+                <label class="checkbox-label" id="autopublish-label"><input class="my-checkbox" id="auto-publish" type="checkbox" name="autopublish"> auto publish</label>
+            </form>
+        </div>
     </div>
     <div>
         <p>Current file: <span id="currentFilePath">...</span></p>
