@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Per edit save file editor",
   "main": "main.js",
-  "productName": "quickTextele",
+  "productName": "quick-text-editor",
   "scripts": {
     "start": "electron ."
   },
